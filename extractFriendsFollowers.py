@@ -1,4 +1,6 @@
 """
+Jayesh Choudhari
+jayeshchoudhari.github.io
 """
 import sys
 import tweepy
@@ -19,7 +21,7 @@ ACCESS_TOKEN_SECRET = keys['access_secret']
 
 
 # get list of handles...
-handlesFilePtr = open("sampleUserIds.txt", "r")
+handlesFilePtr = open("./input/sampleUserIds.txt", "r")
 
 allHandleIds = []
 for line in handlesFilePtr:
@@ -30,7 +32,7 @@ handlesFilePtr.close()
 
 # user_id = '984456621417000960'
 
-followersFilePtr = open("extractedFollowers.txt", "w")
+followersFilePtr = open("./output/extractedFollowers.txt", "w")
 
 idNum = 0
 
